@@ -14,7 +14,7 @@ const server = http.createServer(app);
 
 // Initialize Socket.IO with CORS settings
 const io = new Server(server, {
-  cors: { origin: "*" }, // Allow all origins
+  cors: { origin: process.env.FRONTEND_URI }, // Allow origin
 });
 
 // In-memory storage of document and users
