@@ -4,8 +4,12 @@ import http from "http";
 import { Server, Socket } from "socket.io";
 import cors from "cors";
 import QuillDelta from "quill-delta";
+import dotenv from "dotenv"
 
-// Create an Express application
+// config the .env
+dotenv.config()
+
+// Create an Express application    
 const app = express();
 app.use(cors()); // Enable CORS
 
@@ -20,6 +24,7 @@ const server = http.createServer(app);
 // Initialize Socket.IO with CORS settings
 const io = new Server(server, {
   cors: { origin: process.env.FRONTEND_URI }, // Allow origin
+
 });
 
 // In-memory storage of document and users
@@ -120,7 +125,7 @@ io.on("connection", (socket: Socket) => {
 });
 
 // Start the server on port 3000
-const port =process.env.PORT || 3000
+const port = process.env.PORT || 3000
 server.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}`);
 });
