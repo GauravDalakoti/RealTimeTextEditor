@@ -26,7 +26,7 @@ const io = new Server(server, {
   cors: {
     origin: process.env.FRONTEND_URL, // allow your frontend domain
     methods: ["GET", "POST","PATCH","PUT","DELETE"],
-    allowedHeaders: ["Content-Type"],
+    
   },
 });
 
