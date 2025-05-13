@@ -28,6 +28,8 @@ A full-stack collaborative text editor built with **React**, **Quill**, **Socket
 ## Live Demo
 
 You can try the live demo of the application here:[https://real-time-text-editor-beta.vercel.app]
+⚠️ Note: Due to WebSocket limitations in production, the collaborative editor may not function properly on the live site. For full functionality, please run the app locally using the instructions in the README.
+
 
 ---
 
