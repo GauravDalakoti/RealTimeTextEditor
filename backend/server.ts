@@ -24,9 +24,9 @@ const server = http.createServer(app);
 // Initialize Socket.IO with CORS settings
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_URL, // allow your frontend domain
+    origin: process.env.FRONTEND_URI, // allow your frontend domain
     methods: ["GET", "POST","PATCH","PUT","DELETE"],
-    
+    allowedHeaders: ["Content-Type"],
   },
 });
 
