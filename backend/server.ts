@@ -9,6 +9,11 @@ import QuillDelta from "quill-delta";
 const app = express();
 app.use(cors()); // Enable CORS
 
+// GEt Route
+app.get("/", (req, res) => {
+  res.send("Real-Time Editor Backend is running");
+});
+
 // Create HTTP server using Express
 const server = http.createServer(app);
 
