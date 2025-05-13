@@ -46,6 +46,10 @@ npm run dev
 
 cd ../frontend
 npm install
+
+configure .env
+VITE_SERVER_URL=http://localhost:3000
+
 npm run dev
 
 
