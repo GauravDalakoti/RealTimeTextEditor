@@ -33,7 +33,7 @@ A full-stack collaborative text editor built with **React**, **Quill**, **Socket
 
 ```bash
 git clone https://github.com/GauravDalakoti/RealTimeTextEditor.git
-cd realtime-editor
+cd RealTimeTextEditor
 
 cd server
 npm install
